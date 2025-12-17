@@ -4,7 +4,7 @@ const ProductsPage = async ({ searchParams }: { searchParams: Promise<{ category
     const category = (await searchParams).category;
     return (
         <div>
-            <ProductList category={category} />
+            <ProductList category={category} params="products" />
         </div>
     );
 };

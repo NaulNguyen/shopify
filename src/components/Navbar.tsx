@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SearchBar from "./SearchBar";
 import { Bell, Home, ShoppingCart } from "lucide-react";
+import ShoppingCartIcon from "./ShoppingCartIcon";
 
 export default function Navbar() {
     return (
@@ -25,7 +26,7 @@ export default function Navbar() {
                     <Home className="w-6 h-6 text-gray-600" />
                 </Link>
                 <Bell className="w-6 h-6 text-gray-600" />
-                <ShoppingCart className="w-6 h-6 text-gray-600" />
+                <ShoppingCartIcon />
                 <Link href="/login">Sign in</Link>
             </div>
         </div>

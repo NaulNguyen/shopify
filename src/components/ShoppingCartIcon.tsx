@@ -1,0 +1,17 @@
+"use client";
+
+import Link from "next/link";
+import { ShoppingCart } from "lucide-react";
+
+const ShoppingCartIcon = () => {
+    return (
+        <Link href="/cart" className="relative">
+            <ShoppingCart className="w-6 h-6 text-gray-600" />
+            <span className="absolute -top-3 -right-3 bg-amber-400 text-gray-600 rounded-full w-4 h-4 flex items-center justify-center text-sm font-medium">
+                0
+            </span>
+        </Link>
+    );
+};
+
+export default ShoppingCartIcon;
